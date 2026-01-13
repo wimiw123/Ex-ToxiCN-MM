@@ -56,7 +56,8 @@ JSON
     "non_harmful": "Explanation from a non-harmful perspective..."
   }
 }
-⚠️ Ethics Statement & Disclaimer
+---
+##⚠️ Ethics Statement & Disclaimer
 Warning: This dataset contains content that may be offensive, hateful, or disturbing, including hate speech, stereotypes, and sexual innuendo. These materials are provided solely for academic research purposes (e.g., improving content moderation systems).
 
 The views expressed in the dataset do not reflect the views of the authors or their affiliations.
@@ -65,10 +66,10 @@ We strongly condemn the misuse of this dataset to generate or promote harmful co
 
 Please refer to the paper for details on annotator well-being protection measures.
 
-📜 License
+##📜 License
 This dataset is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Commercial use is strictly prohibited.
 
-🖊️ Citation
+##🖊️ Citation
 If you find this work useful, please cite our paper:
 
 代码段
@@ -79,5 +80,5 @@ If you find this work useful, please cite our paper:
   journal={arXiv preprint/Submission},
   year={2026}
 }
-🙏 Acknowledgments
+##🙏 Acknowledgments
 This research is supported by the Natural Science Foundation of China (No. 62376051) and the Fundamental Research Funds for the Central Universities.
