@@ -56,6 +56,8 @@ JSON
     "non_harmful": "Explanation from a non-harmful perspective..."
   }
 }
+
+```
 ---
 ##⚠️ Ethics Statement & Disclaimer
 Warning: This dataset contains content that may be offensive, hateful, or disturbing, including hate speech, stereotypes, and sexual innuendo. These materials are provided solely for academic research purposes (e.g., improving content moderation systems).
