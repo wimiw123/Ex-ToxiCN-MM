@@ -1,8 +1,10 @@
 # Ex-ToxiCN-MM: A Large-Scale Explainable Chinese Harmful Meme Dataset
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18229215.svg)](https://doi.org/10.5281/zenodo.18229215)  <-- 放在这里
 
 This repository contains the dataset and code for the paper: **"Distinguishing Right from Wrong in Debates: Attribution Analysis of Chinese Harmful Memes"**.
+
 
 ## 📖 Introduction
 
@@ -55,8 +57,8 @@ Each entry includes the slang term, its category, and a detailed definition clar
   "category": "General Offense",
   "definition": "Describes someone who is very poor at skills and has a low level, like a combination of 'newbie' and 'dog'. It is often used to insult and demean others' abilities."
 }
-
-
+```
+---
 ## 📂 Repository Structure
 
 ```text
