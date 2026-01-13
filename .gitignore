@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.DS_Store
+*.pt
+*.pth
+images.zip  # 如果在 Release 中上传图片包，这里忽略掉本地的 zip
