@@ -10,13 +10,13 @@ This repository contains the dataset and code for the paper: **"Distinguishing R
 
 **Ex-ToxiCN-MM** is the first explainable Chinese harmful meme dataset designed to address the challenges of cultural dependency and semantic ambiguity in meme detection. Unlike traditional datasets that only provide classification labels, Ex-ToxiCN-MM offers **dual-opposing interpretations** for each meme:
 1.  **Harmful Interpretation:** Investigates the underlying malicious intent or cultural bias.
-2.  **Non-harmful Interpretation:** Simulates a superficial or benign reading of the content.
+2.  **Non-harmful Interpretation:** Simulates  superficial or benign reading of the content.
 
 We also release **C-HarmKB** (Chinese Harmful Semantic Knowledge Base), which contains 2,870 entries of Chinese slang, offensive vocabulary, and cultural concepts to support knowledge-enhanced reasoning.
 
 ## 📊 Dataset Statistics
 
-The dataset consists of **7,042 samples** collected from major Chinese social platforms (e.g., Weibo, Tieba).
+The dataset consists of **7,042 samples** collected from major Chinese social platforms (.g., Weibo, Tieba).
 
 | Category          |   Count    | Description                                                            |
 | :---------------- | :--------: | :--------------------------------------------------------------------- |
@@ -33,15 +33,15 @@ The dataset consists of **7,042 samples** collected from major Chinese social pl
 
 ## 📚 C-HarmKB: Chinese Harmful Semantic Knowledge Base
 
-[cite_start]To address the challenges posed by the lack of cultural background knowledge in detecting Chinese harmful memes, we constructed **C-HarmKB** (Chinese Harmful Semantic Knowledge Base)[cite: 10, 66]. This knowledge base empowers models to decipher implicit meanings and metaphors rooted in Chinese internet culture.
+To address the challenges posed by the lack of cultural background knowledge in detecting Chinese harmful memes, we constructed **C-HarmKB** (Chinese Harmful Semantic Knowledge Base)[cite: 10, 66]. This knowledge base empowers models to decipher implicit meanings and metaphors rooted in Chinese internet culture.
 
 ### 🛠️ Construction & Statistics
-* [cite_start]**Scale:** The knowledge base comprises **2,870 entries** of Chinese slang, offensive vocabulary, and cultural concepts[cite: 248].
-* [cite_start]**Data Sources:** Terms were systematically harvested via web crawlers from encyclopedic sources (e.g., **Baidu Baike**, **Wikipedia**) and specialized subculture forums[cite: 250].
-* [cite_start]**Quality Control:** All terms underwent a rigorous multi-step annotation process by native speakers proficient in Chinese internet culture to ensure accurate definitions and classifications[cite: 254].
+* **Scale:** The knowledge base comprises **2,870 entries** of Chinese slang, offensive vocabulary, and cultural concepts[cite: 248].
+* **Data Sources:** Terms were systematically harvested via web crawlers from encyclopedic sources (.g., **Baidu Baike**, **Wikipedia**) and specialized subculture forums[cite: 250].
+* **Quality Control:** All terms underwent  rigorous multi-step annotation process by native speakers proficient in Chinese internet culture to ensure accurate definitions and classifications[cite: 254].
 
 ### 🗂️ Taxonomy
-[cite_start]To facilitate fine-grained analysis, entries are categorized into predefined classes[cite: 254]:
+To facilitate fine-grained analysis, entries are categorized into predefined classes[cite: 254]:
 * **Sexism**
 * **Racism**
 * **Region**
@@ -49,13 +49,13 @@ The dataset consists of **7,042 samples** collected from major Chinese social pl
 * **Others** (including general insults and political slang)
 
 ### 📝 Data Example
-Each entry includes the slang term, its category, and a detailed definition clarifying its cultural context and harmful connotation. [cite_start]Below is a sample entry derived from the "Vegetable Dog" meme example[cite: 56, 57, 210, 211, 212]:
+Each entry includes the slang term, its category, and  detailed definition clarifying its cultural context and harmful connotation. [cite_start]Below is  sample entry derived from the "Vegetable Dog" meme example[cite: 56, 57, 210, 211, 212]:
 
 ```json
 {
   "term": "菜狗 (Vegetable Dog)",
   "category": "General Offense",
-  "definition": "Describes someone who is very poor at skills and has a low level, like a combination of 'newbie' and 'dog'. It is often used to insult and demean others' abilities."
+  "definition": "Describes someone who is very poor at skills and has  low level, like  combination of 'newbie' and 'dog'. It is often used to insult and demean others' abilities."
 }
 ```
 ---
@@ -82,15 +82,15 @@ JSON
   "label": "harmful",
   "category": "General Offense",
   "interpretations": {
-    "harmful": "Explanation from a harmful perspective...",
-    "non_harmful": "Explanation from a non-harmful perspective..."
+    "harmful": "Explanation from  harmful perspective...",
+    "non_harmful": "Explanation from  non-harmful perspective..."
   }
 }
 
 ```
 ---
 ## ⚠️ Ethics Statement & Disclaimer
-Warning: This dataset contains content that may be offensive, hateful, or disturbing, including hate speech, stereotypes, and sexual innuendo. These materials are provided solely for academic research purposes (e.g., improving content moderation systems).
+Warning: This dataset contains content that may be offensive, hateful, or disturbing, including hate speech, stereotypes, and sexual innuendo. These materials are provided solely for academic research purposes (.g., improving content moderation systems).
 
 The views expressed in the dataset do not reflect the views of the authors or their affiliations.
 
@@ -99,7 +99,7 @@ We strongly condemn the misuse of this dataset to generate or promote harmful co
 Please refer to the paper for details on annotator well-being protection measures.
 
 ## 📜 License
-This dataset is licensed under a Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Commercial use is strictly prohibited.
+This dataset is licensed under  Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License. Commercial use is strictly prohibited.
 
 ## 🖊️ Citation
 If you find this work useful, please cite our paper:
