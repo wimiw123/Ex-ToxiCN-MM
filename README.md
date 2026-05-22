@@ -5,6 +5,8 @@
 
 This repository contains the dataset and code for the paper: **"Distinguishing Right from Wrong in Debates: Attribution Analysis of Chinese Harmful Memes"**.
 
+The cleaned RIKE methodology implementation, including the Attribution Knowledge Enhancement (AKE/RAG) pipeline and Relative Intent Reasoning (RIR) prompt interface, is available at: **https://github.com/wimiw123/RIKE**.
+
 
 ## 📖 Introduction
 
@@ -12,7 +14,7 @@ This repository contains the dataset and code for the paper: **"Distinguishing R
 1.  **Harmful Interpretation:** Investigates the underlying malicious intent or cultural bias.
 2.  **Non-harmful Interpretation:** Simulates  superficial or benign reading of the content.
 
-We also release **C-HarmKB** (Chinese Harmful Semantic Knowledge Base), which contains 2,870 entries of Chinese slang, offensive vocabulary, and cultural concepts to support knowledge-enhanced reasoning.
+We also release **C-HarmKB** (Chinese Harmful Semantic Knowledge Base), provided as `C-harmKB.json`, which contains 2,870 entries of Chinese slang, offensive vocabulary, and cultural concepts to support knowledge-enhanced reasoning.
 
 ## 📊 Dataset Statistics
 
@@ -63,19 +65,19 @@ Each entry includes the slang term, its category, and  detailed definition clari
 
 ```text
 .
-├── data/
-│   ├── train.json       # Training set annotations
-│   ├── test.json        # Test set annotations
-│   ├── C-HarmKB.json    # The knowledge base
-│   └── images/          # Image files (see Release for full download)
-├── code/                # Source code for the RIKE framework
-├── README.md            # This file
-└── LICENSE              # License file
-📝 Data Format
+├── dataset_with_explanations_harm.json      # Harmful meme annotations
+├── dataset_with_explanations_noharm.json    # Non-harmful meme annotations
+├── C-harmKB.json                            # Chinese harmful semantic knowledge base
+└── README.md                                # This file
+```
+
+The RIKE framework code is maintained in a separate repository: https://github.com/wimiw123/RIKE
+
+## 📝 Data Format
+
 Each entry in the JSON file follows this format:
 
-JSON
-
+```json
 {
   "id": "image_filename.jpg",
   "text": "Meme text content",
@@ -86,7 +88,6 @@ JSON
     "non_harmful": "Explanation from  non-harmful perspective..."
   }
 }
-
 ```
 ---
 ## ⚠️ Ethics Statement & Disclaimer
