@@ -35,15 +35,15 @@ The dataset consists of **7,042 samples** collected from major Chinese social pl
 
 ## 📚 C-HarmKB: Chinese Harmful Semantic Knowledge Base
 
-To address the challenges posed by the lack of cultural background knowledge in detecting Chinese harmful memes, we constructed **C-HarmKB** (Chinese Harmful Semantic Knowledge Base)[cite: 10, 66]. This knowledge base empowers models to decipher implicit meanings and metaphors rooted in Chinese internet culture.
+To address the challenges posed by the lack of cultural background knowledge in detecting Chinese harmful memes, we constructed **C-HarmKB** (Chinese Harmful Semantic Knowledge Base). This knowledge base empowers models to decipher implicit meanings and metaphors rooted in Chinese internet culture.
 
 ### 🛠️ Construction & Statistics
-* **Scale:** The knowledge base comprises **2,870 entries** of Chinese slang, offensive vocabulary, and cultural concepts[cite: 248].
-* **Data Sources:** Terms were systematically harvested via web crawlers from encyclopedic sources (.g., **Baidu Baike**, **Wikipedia**) and specialized subculture forums[cite: 250].
-* **Quality Control:** All terms underwent  rigorous multi-step annotation process by native speakers proficient in Chinese internet culture to ensure accurate definitions and classifications[cite: 254].
+* **Scale:** The knowledge base comprises **2,870 entries** of Chinese slang, offensive vocabulary, and cultural concepts.
+* **Data Sources:** Terms were systematically harvested via web crawlers from encyclopedic sources (.g., **Baidu Baike**, **Wikipedia**) and specialized subculture forums.
+* **Quality Control:** All terms underwent  rigorous multi-step annotation process by native speakers proficient in Chinese internet culture to ensure accurate definitions and classifications.
 
 ### 🗂️ Taxonomy
-To facilitate fine-grained analysis, entries are categorized into predefined classes[cite: 254]:
+To facilitate fine-grained analysis, entries are categorized into predefined classes:
 * **Sexism**
 * **Racism**
 * **Region**
@@ -51,7 +51,7 @@ To facilitate fine-grained analysis, entries are categorized into predefined cla
 * **Others** (including general insults and political slang)
 
 ### 📝 Data Example
-Each entry includes the slang term, its category, and  detailed definition clarifying its cultural context and harmful connotation. [cite_start]Below is  sample entry derived from the "Vegetable Dog" meme example[cite: 56, 57, 210, 211, 212]:
+Each entry includes the slang term, its category, and  detailed definition clarifying its cultural context and harmful connotation. Below is  sample entry derived from the "Vegetable Dog" meme example:
 
 ```json
 {
