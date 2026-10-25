@@ -1,5 +1,7 @@
 # Ex-ToxiCN-MM: Explainable Chinese Harmful Memes
 
+[![Image Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18229215.svg)](https://doi.org/10.5281/zenodo.18229215)
+
 This repository provides **Ex-ToxiCN-MM** and **C-HarmKB**, introduced in *Relative Intent Reasoning for Attribution Analysis of Chinese Harmful Memes*.
 
 Ex-ToxiCN-MM supports harmful meme detection and attribution analysis in Chinese. Each meme is paired with a harmful interpretation and a non-harmful interpretation, allowing models to compare competing readings of the same image-text context. C-HarmKB supplies cultural and semantic knowledge for interpreting Chinese slang, implicit references, and context-dependent expressions.
@@ -46,7 +48,15 @@ C-HarmKB contains contextual meanings and relations for Chinese online expressio
 
 Both annotation files contain samples from the training and test sets. Each sample's `split` field identifies its partition (`train` or `test`), and `split_index` records its zero-based position within that partition. Combine the two files, filter by `split`, and sort by `split_index` to recover the 9,595 training and 2,400 test samples in their original order.
 
-For image assets, see [the dataset image record](https://doi.org/10.5281/zenodo.18229215). The JSON annotations identify images by filename; prepare the corresponding image files for multimodal experiments.
+## Image dataset
+
+The **image component of the full Ex-ToxiCN-MM dataset**, including both harmful and non-harmful memes, is distributed separately on Zenodo:
+
+**[Download the Ex-ToxiCN-MM image dataset](https://doi.org/10.5281/zenodo.18229215)** · DOI: `10.5281/zenodo.18229215`
+
+Use these images together with the two annotation JSON files in this repository. Match each annotation to its image using the `path` field and retain the original image filenames. The `split` and `split_index` fields specify the training/test membership and ordering.
+
+For the RIKE implementation, place the images at `dataset/ex-toxcicn-mm/meme/<filename>` before running multimodal training or inference.
 
 ## Annotation fields
 
