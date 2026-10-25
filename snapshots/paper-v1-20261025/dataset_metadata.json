@@ -1,0 +1,18 @@
+{
+  "version": "paper-v1-20261025",
+  "samples": 11995,
+  "train": 9595,
+  "test": 2400,
+  "harmful": 3815,
+  "non_harmful": 8180,
+  "explanations": 23990,
+  "explanation_length": {
+    "unit": "Unicode code points, stripped",
+    "mean": 60.274239266360986,
+    "population_std": 27.836950666702894
+  },
+  "clean_kb_rows": 23409,
+  "runtime_v6_kb_rows": 26447,
+  "runtime_v6_test_error_mined_rules": 257,
+  "images_in_snapshot": false
+}

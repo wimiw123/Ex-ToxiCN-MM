@@ -4,3 +4,20 @@ __pycache__/
 *.pt
 *.pth
 images.zip  # 如果在 Release 中上传图片包，这里忽略掉本地的 zip
+# Paper snapshot local artifacts
+**/LLaMA-Factory/
+**/models/
+**/saves/
+**/outputs/
+**/generated/
+**/dataset/
+**/data/processed/
+**/data/rag_refactor/
+**/data/llamafactory/
+**/__pycache__/
+**/*.pyc
+.env
+.env.*
+*.pem
+*.key
+*.log
