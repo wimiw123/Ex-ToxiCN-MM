@@ -13,6 +13,5 @@
   },
   "clean_kb_rows": 23409,
   "runtime_v6_kb_rows": 26447,
-  "runtime_v6_test_error_mined_rules": 257,
   "images_in_snapshot": false
 }
