@@ -1,6 +1,6 @@
 # Ex-ToxiCN-MM: Explainable Chinese Harmful Memes
 
-This repository provides **Ex-ToxiCN-MM** and **C-HarmKB**, introduced in *Distinguishing Right from Wrong in Relativity: Attribution Analysis of Chinese Harmful Memes*.
+This repository provides **Ex-ToxiCN-MM** and **C-HarmKB**, introduced in *Relative Intent Reasoning for Attribution Analysis of Chinese Harmful Memes*.
 
 Ex-ToxiCN-MM supports harmful meme detection and attribution analysis in Chinese. Each meme is paired with a harmful interpretation and a non-harmful interpretation, allowing models to compare competing readings of the same image-text context. C-HarmKB supplies cultural and semantic knowledge for interpreting Chinese slang, implicit references, and context-dependent expressions.
 
