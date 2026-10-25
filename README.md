@@ -81,7 +81,7 @@ test = sorted((row for row in samples if row["split"] == "test"), key=lambda row
 knowledge = json.loads((root / "C-harmKB.json").read_text(encoding="utf-8"))["terms"]
 ```
 
-The [RIKE implementation guide](https://github.com/wimiw123/RIKE/tree/main/snapshots/paper-v1-20261025) provides the data-staging, training, retrieval, and inference commands.
+The [RIKE implementation guide](https://github.com/wimiw123/RIKE) provides the data-staging, training, retrieval, and inference commands.
 
 ## License
 
