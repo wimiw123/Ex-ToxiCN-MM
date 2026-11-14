@@ -2,11 +2,11 @@
 
 [![Image Dataset DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18229215.svg)](https://doi.org/10.5281/zenodo.18229215)
 
-This repository provides **Ex-ToxiCN-MM** and **C-HarmKB**, introduced in *Relative Intent Reasoning for Attribution Analysis of Chinese Harmful Memes*.
+This repository provides **Ex-ToxiCN-MM** and **C-HarmKB**, introduced in *Knowledge-Enhanced Intent Reasoning for Chinese Harmful Meme Detection*.
 
 Ex-ToxiCN-MM supports harmful meme detection and attribution analysis in Chinese. Each meme includes **three explanation annotations**: a harmful interpretation, a non-harmful interpretation, and a final decision explanation. The paired interpretations support comparison of competing readings of the same image-text context, while the final explanation provides a decision-level rationale. C-HarmKB supplies cultural and semantic knowledge for interpreting Chinese slang, implicit references, and context-dependent expressions.
 
-The accompanying **[RIKE framework](https://github.com/wimiw123/RIKE)** combines Attribution Knowledge Enhancement (AKE) with Relative Intent Reasoning (RIR).
+The paper calls the framework **Knowledge-Enhanced Intent Reasoning (KIR)**. It combines Attribution Knowledge Enhancement (AKE) with Relative Intent Reasoning (RIR). The implementation is hosted in the [RIKE repository](https://github.com/wimiw123/RIKE).
 
 ## Dataset statistics
 
@@ -16,7 +16,7 @@ Ex-ToxiCN-MM extends the 12,000-sample ToxiCN-MM corpus and contains 11,995 meme
 | --- | ---: |
 | Memes | 11,995 |
 | Training samples | 9,595 |
-| Test samples | 2,400 |
+| Test samples | 2,400 (741 harmful, 1,659 non-harmful) |
 | Harmful memes | 3,815 |
 | Non-harmful memes | 8,180 |
 | Paired interpretation texts | 23,990 |
@@ -33,11 +33,11 @@ Every sample contains all three non-empty explanation fields:
 
 - **Harmful interpretation (`intent_harm`):** identifies a plausible harmful intent and explains the relevant target, semantic cues, cultural knowledge, and image-text relationship.
 - **Non-harmful interpretation (`intent_noharm`):** develops a plausible benign reading, such as humor, self-deprecation, a literal interpretation, or everyday commentary.
-- **Final decision explanation (`final_explanation`):** provides a rationale for the harmfulness judgment in the meme context, drawing on the relevant interpretations and contextual evidence.
+- **Final decision explanation (`final_explanation`):** is independently written by a human annotator to justify the original ToxiCN-MM label using visual and textual evidence from the meme.
 
 The two interpretation fields and the final explanation are included for both harmful and non-harmful samples. The interpretation count and length statistics above refer to the paired interpretation fields; final explanations are counted separately.
 
-The annotation process combines LLM-assisted drafts with human editing, cross-review, and adjudication. Explanations are assessed for informativeness, soundness, cultural relevance, conciseness, and persuasiveness.
+GPT-4o-mini generates the paired interpretations from opposing intent assumptions. Human reviewers verify perspective consistency and factual accuracy. Annotators independently write and cross-review the final decision explanations, with senior reviewers adjudicating unresolved disagreements. Reviewers assess final explanations for informativeness, soundness, cultural relevance, conciseness, and persuasiveness.
 
 ## C-HarmKB
 
